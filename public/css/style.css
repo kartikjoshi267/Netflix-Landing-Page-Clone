@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.first{
+    background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: min(15vw, 220px);
+}
+
+.bg-first{
+    position: absolute;
+    min-height: 900px;
+    width: 200vw;
+    z-index: -1;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo{
+    width: 15%;
+    padding: 1em;
+}
+
+.navbar-logo img{
+    width: min(100%, 167px);
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.nav-lang select{
+    background-color: transparent;
+    outline: 2px solid white;
+    color: white;
+    font-size: 1vw;
+    border-radius: 5%;
+    margin: 1.4vw;
+    padding: 0.3em;
+}
+
+.nav-lang select option{
+    background-color: rgb(44, 44, 44);
+}
+
+.nav-button{
+    padding: 0.7em;
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    border: none;
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.title{
+    margin-top: 4em;
+    width: 45%;
+    text-align: center;
+    color: white;
+}
+
+.title h1{
+    font-size: min(6.5vw, 4em);
+    line-height: 1em;
+    overflow-y: hidden;
+}
+
+.title p:first-of-type{
+    margin-top: 1em;
+    font-size: min(2.4vw, 1.8em);
+}
+
+.title p:last-of-type{
+    margin-top: 0.5em;
+    font-size: min(2.4vw, 1.2em);
+}
+
+.title .form{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.title .form .form-input{
+    font-size: 1vw;
+    width: 100%;
+    padding: 1.4vw;
+}
+
+.title .form .form-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    font-size: 1.5vw;
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+}
+
+.title .form .form-submit span{
+    margin-left: 0.4vw;
+    font-size: 2vw;
+}
+
+.second{
+    background-color: black;
+    color: white;
+}
+
+.second-inside-div{
+    padding: 3vw 0.4vw;
+    border-bottom: 0.5vw solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-inside-div:first-of-type{
+    border-top: 0.5vw solid #222;
+}
+
+.second .second-inside-div .text{
+    width: 40%;
+    font-size: 1.5vw;
+    padding: 2vw;
+}
+
+.second .second-inside-div .text h2{
+    font-size: 3.4vw;
+    margin-bottom: 1vw;
+}
+
+.second .second-inside-div .image{
+    overflow-y: hidden;
+    width: 35%;
+}
+
+.second .second-inside-div .image img{
+    width: 100%;
+}
+
+.first-div-img{
+    position: relative;
+}
+
+.first-div-img img{
+    position: relative; 
+    z-index: 10;
+}
+
+.first-div-vid{
+    top: 0vw;
+    left: 4.6vw;
+    width: 25.8vw;
+    height: 24.3vw;
+    position: absolute;
+}
+
+.even{
+    flex-direction: row-reverse;
+}
+
+.odd{
+    flex-direction: row;
+}
+
+.mobile-img{
+    position: relative;
+}
+
+.mobile-img .download-display{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    /* padding: 0.2vw; */
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 20vw;
+    min-width: 180px;
+    overflow-y: hidden;
+}
+
+.mobile-img .download-display div{
+    padding: 1vw 0px;
+    width: 3vw;
+    margin:0px 12px;
+    font-size: 1vw;
+}
+
+.mobile-img .download-display div:nth-of-type(2){
+    width: fit-content;
+    font-weight: 600;
+}
+
+.mobile-img .download-display .img{
+    min-width: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:960px) {
+    .second .second-inside-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second .second-inside-div .text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .second .second-inside-div .image{
+        width: 50%;
+    }
+
+    .first-div-vid{
+        top: 5.5vw;
+        left: 6.55vw;
+        width: 36vw;
+        height: 24.9vw;
+        position: absolute;
+    }
+
+    .mobile-img .download-display div{
+        padding: 1vw 0px;
+        width: 3vw;
+        margin:0px 12px;
+        font-size: 10px;
+    }
+}
