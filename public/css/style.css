@@ -381,6 +381,15 @@
         height: fit-content;
     }
 
+    .fourth h3 {
+        text-align: left;
+        width: 80%;
+    }
+
+    .cards{
+        width: 80%;
+    }
+
     .third-div-vid {
         top: -1vw;
         left: 9.6vw;
