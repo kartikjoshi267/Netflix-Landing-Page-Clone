@@ -238,13 +238,40 @@
 }
 
 .fourth{
-    padding: 1vw;
+    padding: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #757575;
     background-color: black;
+}
+
+.fourth h3{
+    text-align: left;
+    width: 60%;
+}
+
+.fourth a{
+    color: #757575;
+    text-decoration: none;
+}
+
+.fourth a:hover{
+    text-decoration: underline;
+}
+
+.fourth ul{
+    padding: 3vw;
+    display: flex;
+    max-height: 140px;
+    flex-flow: wrap column;
+    width: max(60%, 200px);
+}
+
+.fourth ul li{
+    font-size: max(1vw, 12px);
+    padding: max(0.3vw, 3px);
 }
 
 @media screen and (max-width:960px) {
@@ -289,9 +316,13 @@
     }
 
     .mobile-img .download-display div{
-        padding: 1vw 0px;
+        padding: min(1vw, 10px) 0px;
         width: 3vw;
         margin:0px 12px;
         font-size: 10px;
+    }
+
+    .fourth ul{
+        height: 120px;
     }
 }
