@@ -11,6 +11,6 @@ card_question.forEach((elem) => {
         } else {
             button_div.innerHTML = '&#215';
             answer_div.style.maxHeight = answer_div.scrollHeight + "px";
-          }
+        }
     });
 });
