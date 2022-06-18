@@ -97,7 +97,7 @@
 }
 
 .title .form .form-input {
-    font-size: 1vw;
+    font-size: max(1vw, 15px);
     width: 100%;
     padding: 1.4vw;
     outline: none;
@@ -139,12 +139,12 @@
 
 .second .second-inside-div .text {
     width: 40%;
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 17px);
     padding: 2vw;
 }
 
 .second .second-inside-div .text h2 {
-    font-size: 3.4vw;
+    font-size: max(3.4vw, 30px);
     margin-bottom: 1vw;
 }
 
@@ -281,14 +281,13 @@
 
 .fourth ul {
     padding: 3vw;
-    display: flex;
-    max-height: 140px;
-    flex-flow: wrap column;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     width: max(60%, 200px);
 }
 
 .fourth ul li {
-    font-size: 1vw;
+    font-size: max(1vw, 15px);
     padding: 0.3vw;
 }
 
@@ -340,7 +339,7 @@
 
     .title .form .form-input {
         height: 1em;
-        font-size: 0.4em;
+        /* font-size: 0.4em; */
         margin-bottom: 1em;
     }
 
@@ -378,7 +377,7 @@
     }
 
     .fourth ul {
-        height: fit-content;
+        grid-template-columns: auto auto;
     }
 
     .fourth h3 {
