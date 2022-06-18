@@ -17,9 +17,8 @@
 }
 
 .bg-first{
-    position: absolute;
-    min-height: 900px;
-    width: 200vw;
+    position: fixed;
+    width: 200%;
     z-index: -1;
 }
 
@@ -222,7 +221,51 @@
     height: 100%;
 }
 
+.third{
+    background-color: black;
+    color: white;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.5vw solid #222;
+}
+
+.third .head{
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.fourth{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #757575;
+    background-color: black;
+}
+
 @media screen and (max-width:960px) {
+    .title .form{
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title .form .form-input{
+        height: 1em;
+        font-size: 0.4em;
+        margin-bottom: 1em;
+    }
+
+    .title .form .form-submit{
+        height: 3em;
+    }
+
     .second .second-inside-div{
         flex-direction: column;
         align-items: center;
