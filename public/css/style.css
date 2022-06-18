@@ -237,6 +237,23 @@
     font-size: 2.5vw;
 }
 
+.third-div-img{
+    position: relative;
+}
+
+.third-div-img img{
+    position: relative; 
+    z-index: 10;
+}
+
+.third-div-vid{
+    top: -4vw;
+    left: 6.6vw;
+    width: 20.8vw;
+    height: 24.3vw;
+    position: absolute;
+}
+
 .fourth{
     padding: 3vw;
     display: flex;
@@ -324,5 +341,13 @@
 
     .fourth ul{
         height: 120px;
+    }
+
+    .third-div-vid{
+        top: -1vw;
+        left: 9.6vw;
+        width: 29.8vw;
+        height: 24.3vw;
+        position: absolute;
     }
 }
