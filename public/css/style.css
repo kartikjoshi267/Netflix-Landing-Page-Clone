@@ -378,7 +378,7 @@
     }
 
     .fourth ul {
-        height: 120px;
+        height: fit-content;
     }
 
     .third-div-vid {
