@@ -8,6 +8,30 @@
     z-index: 0;
 }
 
+.loading{
+    height: 1vh;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    color: white;
+    transition: 0.2s ease all;
+    animation: bg-change 2s ease normal forwards infinite;
+    background: linear-gradient(to right, rgb(123, 0, 0), red, rgb(255, 95, 121));
+}
+
+@keyframes bg-change {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
 .first {
     background: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
     display: flex;

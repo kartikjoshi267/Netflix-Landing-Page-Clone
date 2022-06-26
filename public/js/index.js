@@ -1,3 +1,12 @@
+document.onreadystatechange = function(){
+    if (document.readyState == "loading"){
+        document.getElementById('loading').style.display = "block";
+    }
+    else if (document.readyState == "complete"){
+        document.getElementById('loading').style.display = "none";
+    }
+}
+
 const card_question = document.querySelectorAll(".question");
 
 card_question.forEach((elem) => {
