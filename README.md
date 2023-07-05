@@ -1,10 +1,10 @@
 # Netflix-Landing-Page-Clone
 
-[Demo](https://kartikjoshi267.github.io/Netflix-Landing-Page-Clone/)
+[Click here to view Demo](https://kartikjoshi267.github.io/Netflix-Landing-Page-Clone/)
 
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=kartikjoshi267.visitor-badge)
+## About
 
-Netflix clone has been made from scratch using
+This Netflix Landing Page clone has been made from scratch using
 
 - HTML
 - CSS
